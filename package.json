@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/unlimish/proj_three_js/issues"
   },
-  "homepage": "https://github.com/unlimish/proj_three_js#readme"
+  "homepage": "https://github.com/unlimish/proj_three_js#readme",
+  "dependencies": {
+    "three": "^0.121.1"
+  }
 }
