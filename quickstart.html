@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+    <script>
+        window.addEventListener('load', init);
+
+        function init() {
+            const width = 960;
+            const height = 540;
+
+            const renderer = new THREE.WebGLRenderer({
+                canvas: document.querySelector('#myCanvas')
+            });
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(width, height);
+
+            const scene = new THREE.Scene();
+
+            const camera = new THREE.PerspectiveCamera(45, width / height);
+            camera.position.set(0, 0, +1000);
+
+            const geometry = new THREE.BoxGeometry(400, 400, 400);
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+</body>
+</html>
