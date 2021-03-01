@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/unlimish/proj_three_js#readme",
   "dependencies": {
-    "three": "^0.121.1"
+    "three": "^0.125.0"
   }
 }
